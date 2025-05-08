@@ -237,6 +237,11 @@
     border-radius: 0.4rem;
     cursor: pointer;
   }
+  .btn:hover {
+    color:blue;
+    background-color: #fff;
+    transition: 1s;
+  }
   /*about end*/
   /*Question start*/
   .question h2 {
