@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="ai2.css" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../img/cg_icons.png">
+    <title>AI</title>
+    <style>
+        .modal-content {
+            background: rgb(8, 255, 241);
+            background: linear-gradient(111deg, rgba(8, 255, 241, 1) 25%, rgba(3, 149, 252, 1) 50%, rgba(2, 236, 255, 1) 75%);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar Start-->
+    <nav>
+        <div class="container clearfix">
+            <div class="logo-box">
+                <a class="logo text-uppercase" href="#"> Welcome to ai website</a>
+            </div>
+            <div class="nav-links responsive">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link text-uppercase nav-icon">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ai-world" class="nav-link text-uppercase">ai world</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-uppercase">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link text-uppercase">questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-uppercase">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Header Start-->
+    <header>
+        <img class="img-fluid" src="../img/ai.jpg" alt="" />
+        <h1 class="text-uppercase">ai brain</h1>
+        <h2>Lorem, ipsum dolor.</h2>
+    </header>
+    <!--Header End-->
+
+    <!--ai world start-->
+    <section class="ai-world" id="ai-world">
+        <div class="container">
+            <h2 class="text-uppercase">ai world</h2>
+            <div class="ai-img clearfix">
+                <div class="col">
+                    <h3>Kuantum Bilgisayarlar ve AI</h3>
+                    <br>
+                    <div class="ai-item">
+                        <a href="#">
+                            <img class="img-fluid-ai" src="../img/brain.jpg" alt="" />
+                        </a>
+                        <div class="img-overlay">
+                            <div class="icon">
+                                <i class="fas fa-plus" data-bs-toggle="modal" data-bs-target="#brainModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="brainModal">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content" id="modal-bg">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Kuantum Bilgisayarlar ve AI</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Kuantum bilgisayarlar ve yapay zeka (AI), birlikte çalışarak büyük bir potansiyel sunar.
+                                Kuantum bilgisayarlar, paralel işlem yaparak AI algoritmalarını çok daha hızlı işler ve
+                                karmaşık hesaplamaları hızla çözer. Bu, daha doğru tahminler ve gelişmiş makine
+                                öğrenmesi modelleri oluşturulmasına imkan tanır. Kuantum bilgisayarlar, AI’ye hız ve
+                                hesaplama gücü sağlayarak ilaç keşfi, malzeme bilimi ve finans gibi alanlarda devrim
+                                yaratabilir. Bu işbirliği, teknolojinin gelecekteki gelişimine önemli katkılar
+                                sağlayacaktır.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Veri Analiziyle Akıllı Kararlar</h3>
+                    <br>
+                    <div class="ai-item">
+                        <a href="#">
+                            <img class="img-fluid-ai" src="../img/el.jpg" alt="" />
+                        </a>
+                        <div class="img-overlay">
+                            <div class="icon">
+                                <i class="fas fa-plus" data-bs-toggle="modal" data-bs-target="#elModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="elModal">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Veri Analiziyle Akıllı Kararlar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Yapay zeka (AI) ve veri analizi, büyük veri kümelerinden anlamlı bilgiler çıkaran güçlü
+                                bir işbirliği sunar. AI, verileri analiz ederek kalıplar keşfeder, tahminlerde bulunur
+                                ve karar destek sistemleri oluşturur. Makine öğrenmesi ve derin öğrenme teknikleri, veri
+                                analizini daha hızlı ve doğru hale getirir. AI, işletmelerin müşteri davranışlarını
+                                öngörmesine, operasyonları optimize etmesine ve stratejik kararlar almasına yardımcı
+                                olarak verimliliği artırır. Bu sayede, daha akıllı ve etkili sistemler geliştirilir.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Yapay Zeka ve İnsansı Robotlar</h3>
+                    <br>
+                    <div class="ai-item">
+                        <a href="#">
+                            <img class="img-fluid-ai" src="../img/robot.jpg" alt="" />
+                        </a>
+                        <div class="img-overlay">
+                            <div class="icon">
+                                <i class="fas fa-plus" data-bs-toggle="modal" data-bs-target="#robotModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="robotModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Yapay Zeka ve İnsansı Robotlar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Gelecekte ne gibi insan özelliklerini taşıyan teknolojiler çıkıcak.<br>
+                                İnsanlarla daha iyi iletişim kurabilen robotlar geliştirilecek.<br>
+                                Ev, sağlık ve sanayi alanlarında robotların kullanımı artacak.<br>
+                                İnsan benzeri duygusal zekaya sahip AI sistemleri ortaya çıkacak.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Sağlık ve Tıp Alanında Devrim</h3>
+                    <br>
+                    <div class="ai-item">
+                        <a href="#">
+                            <img class="img-fluid-ai" src="../img/human_ai.jpg" alt="" />
+                        </a>
+                        <div class="img-overlay">
+                            <div class="icon">
+                                <i class="fas fa-plus" data-bs-toggle="modal" data-bs-target="#humanModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="humanModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Sağlık ve Tıp Alanında Devrim</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Yapay zeka, sağlık sektöründe hastalık teşhisi, kişiselleştirilmiş tedavi ve robotik
+                                cerrahi gibi alanlarda büyük ilerlemeler sağlıyor. Tıbbi görüntüleme analizleriyle
+                                hastalıkları erken tespit ederken, ilaç geliştirme süreçlerini hızlandırıyor. Uzaktan
+                                hasta takibi ve veri analizi ile daha hızlı ve etkili müdahaleler mümkün hale geliyor.
+                                AI, sağlık hizmetlerini daha güvenli, verimli ve kişiye özel hale getirerek yaşam
+                                süresini ve kalitesini artırıyor.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Derin Öğrenme (DL - Deep Learning)</h3>
+                    <br>
+                    <div class="ai-item">
+                        <a href="#">
+                            <img class="img-fluid-ai" src="../img/nöron_ai.jpg" alt="" />
+                        </a>
+                        <div class="img-overlay">
+                            <div class="icon">
+                                <i class="fas fa-plus" data-bs-toggle="modal" data-bs-target="#nöronModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="nöronModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Derin Öğrenme (DL - Deep Learning)</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Derin öğrenme, yapay sinir ağlarını kullanarak büyük ve karmaşık veri kümeleri üzerinde
+                                işlem yapar.<br>
+                                Evrişimsel Sinir Ağları (CNN - Convolutional Neural Networks): Görüntü ve video analizi
+                                için kullanılır.<br>
+                                Tekrarlayan Sinir Ağları (RNN - Recurrent Neural Networks): Zaman serisi verileri ve
+                                metin analizi için uygundur.<br>
+                                Transformers: Doğal dil işleme (NLP) uygulamalarında kullanılır (Örn: ChatGPT, Google
+                                Bard).
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Otonom Sistemler</h3>
+                    <br>
+                    <div class="ai-item">
+                        <a href="#">
+                            <img class="img-fluid-ai" src="../img/surreal_ai.jpg" alt="" />
+                        </a>
+                        <div class="img-overlay">
+                            <div class="icon">
+                                <i class="fas fa-plus" data-bs-toggle="modal" data-bs-target="#surrealModal"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade " id="surrealModal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Otonom Sistemler</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Gerçek dünyada hareket edebilen ve çevresine uyum sağlayabilen sistemlerdir.<br>
+                                Otonom Araçlar: Tesla, Waymo gibi şirketlerin geliştirdiği sürücüsüz araçlar.<br>
+                                Endüstriyel Robotlar: Fabrikalarda kullanılan robot kolları ve üretim hatları.<br>
+                                İnsansı Robotlar: Boston Dynamics'in robotları gibi insana benzeyen makineler.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ai world end-->
+
+    <!--About start-->
+    <section class="about clearfix" id="about">
+        <h2 class="text-uppercase">about</h2>
+        <div class="about-text">
+            <div class="left">
+                <p class="text">
+                    Yapay zeka, en basit şekilde belirli görevleri yerine getirmek için
+                    insan zekasını taklit eden ve topladıkları bilgileri yineleyerek
+                    kendilerini geliştirebilen sistemler olarak tanımlanır. Yapay zekayı
+                    günümüz teknoloji sistemlerinden ayıran en önemli özellik insanzekasını taklit edebilmesidir.
+                </p>
+            </div>
+            <div class="right">
+                <p class="text">
+                    Bu sistem, var olan durumları gözlemleyerek daha önceden belirlenen
+                    parametreler doğrultusunda ilgili durumu işler ve buna yönelik bir
+                    tepki verir. Bu süreçte, yapay zeka duruma ilişkin verileri hızlı,
+                    yinelemeli ve akıllı algoritmalarla birleştirilerek işler.Buda ona olağan üstü bir hız sağlar.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--About end-->
+    <!--Question-->
+    <section class="question" id="questions">
+        <h2 class="text-uppercase">Sıkça Sorulan Sorular</h2>
+        <div class="question-text">
+            <div class="text">
+                <div class="card-header">
+                    <a href="#question-1" class="card-link" data-bs-toggle="collapse">Yapay zeka nedir?</a>
+                </div>
+                <div id="question-1" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p class="answer">Yapay zeka, insan zekâsını taklit edebilen ve öğrenme, akıl yürütme, problem çözme gibi
+                            görevleri yerine getirebilen yazılım veya sistemlerdir. Örnek: Sesli asistanlar, öneri
+                            sistemleri.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="card-header">
+                    <a href="#question-2" class="card-link" data-bs-toggle="collapse">Yapay zeka nasıl çalışır?</a>
+                </div>
+                <div id="question-2" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p class="answer">Yapay zeka, verilerden örüntüler öğrenen algoritmalarla çalışır. Özellikle makine öğrenmesi
+                            ve derin öğrenme yöntemleriyle, geçmiş verilerden öğrenerek gelecekteki durumları tahmin
+                            eder veya karar verir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="card-header">
+                    <a href="#question-3" class="card-link" data-bs-toggle="collapse">Yapay zeka ile makine öğrenmesi
+                        aynı şey mi?</a>
+                </div>
+                <div id="question-3" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p class="answer">Hayır. Makine öğrenmesi, yapay zekanın bir alt dalıdır. Yapay zeka genel bir kavramken,
+                            makine öğrenmesi verilerden öğrenebilen sistemler geliştirmeye odaklanır.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="card-header">
+                    <a href="#question-4" class="card-link" data-bs-toggle="collapse">Yapay zeka insanları işsiz bırakır
+                        mı?</a>
+                </div>
+                <div id="question-4" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p class="answer">Bazı işleri otomatikleştirerek değiştirebilir ama aynı zamanda yeni iş alanları da oluşturur.
+                            İnsanlar daha yaratıcı, stratejik işlere yönelebilir. Riskleri yönetmek için planlama
+                            şarttır.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="card-header">
+                    <a href="#question-5" class="card-link" data-bs-toggle="collapse">Yapay zeka tehlikeli olabilir
+                        mi?</a>
+                </div>
+                <div id="question-5" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <p class="answer"> Kontrolsüz veya etik dışı kullanıldığında riskler taşıyabilir (mahremiyet, önyargı, otonom
+                            silahlar gibi). Bu yüzden yapay zeka uygulamaları etik ilkelerle geliştirilmeli ve
+                            denetlenmelidir.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Question-->
+    <!--Contact start-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="text-uppercase">contact me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="last-name" placeholder="Last Name" />
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="E-mail" />
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="(555) 555 55 55" />
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" id="message" placeholder="Message"></textarea>
+                </div>
+            </form>
+            <button class="button btn-send" id="btn-send">Send</button>
+        </div>
+    </section>
+    <!--Contact end-->
+    <!--Footer start-->
+    <footer>
+        <div class="container clearfix">
+            <div class="col">
+                <h4 class="text-uppercase"> location</h4>
+                <p>2215 Celil Gündoğan, MO 65243</p>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase"> arround the web</h4>
+                <ul>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">about</h4>
+                <p>Created by Celil Gündoğan</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copy-right">
+        <div class="container">
+            <small> Copy @ Your Website2025 </small>
+        </div>
+    </div>
+    <script src="ai2.js"></script>
+</body>
+
+</html>

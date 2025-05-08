@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 6px;
+  }
+  body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background: linear-gradient(
+      135deg,
+      #2e1a47,
+      #6d254f,
+      #c03c44,
+      #f2854a,
+      #ffd25a
+    );
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  section {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+  .col {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  /*navbar start*/
+  nav {
+    width: 100%;
+    background: linear-gradient(90deg, #2c0e37, #a12b3f, #f2a359);
+  
+    color: #00ffd5;
+    padding: 1.6rem 0;
+    position: fixed;
+    z-index: 1000;
+  }
+  .logo-box {
+    float: left;
+    padding-top: 0.5rem;
+  }
+  .logo {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+  .nav-links {
+    float: right;
+  }
+  .nav-links .nav-item {
+    float: left;
+    margin: 0.5rem;
+  }
+  .nav-links .nav-link {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.5;
+  }
+  .nav-links .nav-link:hover {
+    opacity: 1;
+    background-color: purple;
+    transition: 0.6s;
+  }
+  .nav-links .nav-icon:hover {
+    color: purple;
+    background-color: transparent;
+  }
+  .nav-links .nav-icon {
+    display: none;
+  }
+  @media (max-width: 992px) {
+    .logo-box {
+      float: none;
+      text-align: left;
+    }
+    .nav-links {
+      float: none;
+    }
+    .nav-links .nav-link {
+      font-size: 2rem;
+      padding-left: 0;
+    }
+    .nav-links .nav-item {
+      float: none;
+      text-align: center;
+    }
+    .nav-links .nav-icon {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 5px;
+      font-size: 3rem;
+    }
+    .nav-links.responsive li:not(:first-child) {
+      display: none;
+    }
+  }
+  /*navbar end*/
+  
+  /*header start*/
+  header {
+    padding-top: calc(97px + 7rem);
+    text-align: center;
+  }
+  .img-fluid {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  header h1 {
+    color: #99e6ff;
+    font-size: 6rem;
+  }
+  header h2 {
+    color: #fff;
+  }
+  
+  /*header end*/
+  
+  /*ai world start*/
+  .ai-world h2 {
+    font-size: 4.8rem;
+    color: #99e6ff;
+  }
+  .ai-world h3 {
+    color: #fff;
+  }
+  .img-fluid-ai {
+    max-width: 100%;
+    height: auto;
+  }
+  .ai-item {
+    position: relative;
+  }
+  
+  .ai-item img {
+    display: block;
+    border-radius: 10px;
+  }
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .icon {
+    color: blue;
+    font-size: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-overlay:hover {
+    opacity: 0.8;
+    background-color: aqua;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  /*ai world end*/
+  
+  /*about start*/
+  .about {
+    background: linear-gradient(90deg, #3b0f49, #b02e47, #f4b860);
+  }
+  .about h2 {
+    font-size: 4.8rem;
+    color: #fff;
+  }
+  .about-text {
+    text-align: left;
+  }
+  .about-text .left {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+  }
+  .about-text .right {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 5px;
+  }
+  .about-text .text {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .btn {
+    padding:1.2rem 1.5rem;
+    font-size: 1.5rem;
+
+}
+  .button {
+    margin-top: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+  /*about end*/
+  /*Question start*/
+  .question h2 {
+    font-size: 4rem;
+    color: #fff;
+  }
+  .question-text .text {
+    text-align: center;
+    padding: 15px 25px;
+  }
+  .question-text .text,.card-link {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .question-text .answer {
+    color: black;
+  }
+  /*Question start*/
+  /*Contact start*/
+  .contact h2 {
+    font-size: 4rem;
+    color: #fff;
+  }
+  .contact form {
+    margin: 0 auto;
+    text-align: left;
+    width: 70%;
+  }
+  .form-group {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    color: #fff;
+    background-color: transparent;
+    display: block;
+    font-size: 2.4rem;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .btn-send {
+    color: #ffffff;
+    padding: 2rem;
+    background-color: gray;
+    opacity: 0.5;
+    font-size: 1.5rem;
+  }
+  .btn-send:hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  /*Contact end*/
+  /*footer Start*/
+  footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: linear-gradient(90deg, #45103a, #c03654, #f6c177);
+  }
+  footer h4 {
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  footer p {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .btn-social {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: transparent;
+  }
+  .col li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .copy-right {
+    background: linear-gradient(90deg, #2d0a34,#d9825f, #5c1d3d );
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /*Footer End*/
+  /*Responsive*/
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 8px;
+    }
+    .container {
+      max-width: 720;
+    }
+    .col {
+      width: 50%;
+    }
+  }
+  @media (min-width: 992px) {
+    html {
+      font-size: 9px;
+    }
+    .container {
+      max-width: 960px;
+    }
+    .col {
+      width: 33.333%;
+    }
+    .about-text .left {
+      float: left;
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 210px;
+    }
+    .about-text .right {
+      float: right;
+      width: 50%;
+      padding-left: 10px;
+      padding-right: 210px;
+    }
+  }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 10px;
+    }
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
